@@ -7,7 +7,7 @@ from pyrogram import Client
 from pyrogram.enums import ParseMode
 from datetime import datetime
 import sys
-from config import API_HASH, API_ID, LOGGER, TG_BOT_WORKERS, CHANNEL_ID, PORT  # Include OWNER_ID for sending logs
+from config import API_HASH, API_ID, LOGGER, TG_BOT_WORKERS, CHANNEL_ID, PORT, TG_BOT_TOKEN # Include OWNER_ID for sending logs
 import pyrogram.utils
 
 # Initialize a logger to capture deployment logs
@@ -15,7 +15,7 @@ logging.basicConfig(filename='log.txt', level=logging.INFO)
 logger = logging.getLogger(__name__)
 PDOX="6259443940"
 pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
-TG_BOT_TOKEN="7392123403:AAGubOlCPNRWy1YiQNcXxl4Ftb7AlmZa7E0"
+
 
 class Bot(Client):
     def __init__(self):
